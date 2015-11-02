@@ -2,5 +2,5 @@
 ; Remap global keys
 ;
 #NoEnv
-+Capslock::Capslock
+^!+Capslock::Capslock
 Capslock::Esc

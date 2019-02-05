@@ -19,7 +19,8 @@ return
 #!w::
 EnvGet, LocalAppData, LOCALAPPDATA
 EnvGet, AppData, APPDATA
-Run,"%LocalAppData%\wsltty\bin\mintty.exe" --WSL= --configdir="%AppData%\wsltty" -~
+EnvGet, UserProfile, USERPROFILE
+Run,"%LocalAppData%\wsltty\bin\mintty.exe" --WSL="Ubuntu-18.04" --configdir="%AppData%\wsltty" /bin/bash -l -i,%UserProfile%
 return
 
 #!p::
